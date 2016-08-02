@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+  .navbar-default {
+    height: auto;
+    background-color: $dark-blue;
+    border: none;
+  }
+
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:hover {
+    background-color: $dark-blue;
+    border-bottom: none;
+    color: $light-blue;
+  }
+
+  .navbar-default .navbar-nav>.active>a:focus {
+    color: $light-blue;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    height: 50px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    background-color: $dark-blue;
+  }
+
+  .navbar-default .navbar-nav>li>a:hover {
+    border-bottom: none;
+  }
+
+  .navbar-default .navbar-nav>li>a:hover {
+    color: $light-blue;
+  }
+
+  .navbar-brand>img {
+    display: none;
+  }
+
+  .navbar-default .navbar-toggle {
+    float: left;
+    margin-left: 15px;
+  }
+
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: $dark-blue;
+  }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+}
