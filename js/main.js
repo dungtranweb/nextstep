@@ -1,3 +1,19 @@
+// Smooth scrolling
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 // Set position when change navbar's height and background-color
 var nav_height = $('.navbar').height() - 1;
 
@@ -23,3 +39,25 @@ $(document).ready(function() {
     $('.navbar').autoHidingNavbar();
   }
 })
+
+// Slider
+$(document).ready(function() {
+  // Header
+  $('.header-slider').flexslider({
+    animation: "slide",
+    animationSpeed: 300,
+    controlNav: false
+  });
+
+  // Apps link
+  var link = $('.owl-carousel');
+
+  link.owlCarousel({
+    items:6,
+    loop:true,
+    autoWidth: true,
+    margin:30,
+    autoplay:true,
+    autoplayTimeout: 1000
+  });
+});
