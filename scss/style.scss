@@ -15,6 +15,8 @@
 body {
   font-family: 'Poppins', Tahoma, Arial, sans-serif;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -22,13 +24,62 @@ h1 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
 p {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 300;
+}
+
+input {
+  height: 60px;
+  font-weight: 300;
+  outline: none;
+  border: none;
+  background-color: $light-grey;
+  vertical-align: middle;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  @include border-radius(10px);
+}
+
+textarea {
+  @extend input;
+  height: auto;
+  resize: none;
+  min-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+
+  &:hover {
+    color: $light-blue;
+    text-decoration: none;
+  }
 }
 
 .ion {
   color: $light-blue;
+}
+
+.title {
+  padding: 50px 0;
+  text-align: center;
 }
 /* end general */
 
@@ -183,13 +234,9 @@ p {
   background-color: $light-grey;
   text-align: center;
 
-  .title {
-    padding: 70px 0;
-
-    p {
-      font-size: 16px;
-      line-height: 20px;
-    }
+  p {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .screen-slider {
@@ -217,29 +264,132 @@ p {
 /* end apps slider */
 
 /* why */
-#why {  
-  h1 {
-    text-align: center;
-    padding: 70px 0;
-  }
-
+#why {
   .why-info {
     background: white url(../images/why.png) right top no-repeat;
     padding-bottom: 50px;
 
     h3 {
-      font-size: 24px;
-      font-weight: 600;
       color: $light-blue;
-      padding: 20px 0;
     }
 
     .reason {
       margin: 30px 0 30px 50px;
+      font-weight: 300;
     }
   }
 }
 /* end why */
+
+/* subscribe */
+#subscribe {
+  background: $light-grey url(../images/subscribe-bg.png) center center no-repeat;
+  padding: 45px 0;
+  overflow: hidden;
+
+  h3 {
+    color: white;
+  }
+
+  .form-sub {
+    position: relative;
+  }
+
+  input {
+    font-size: 24px;
+    background-color: white;
+  }
+
+  button {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 40px;
+  }
+}
+/* end subscribe */
+
+/* about */
+#about {
+  .nex-info {
+    p {
+      padding-bottom: 20px;
+
+      &:last-child {
+        font-weight: 600;
+      }
+
+      &:first-child {
+        padding-top: 30px;
+      }
+    }
+  }
+}
+/* end about */
+
+/* clients */
+#clients {
+  background-color: $light-grey;
+}
+/* end clients */
+
+/* contact */
+#contact {
+  .contact-submit {
+    text-align: center;
+
+    button {
+      margin-top: 15px;
+    }
+  }
+}
+/* end contact */
+
+/* contact data */
+#contact-data {
+  margin: 50px 0;
+
+  .ion {
+    font-size: 70px;
+    vertical-align: middle;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+
+    div:last-child {
+      padding-left: 15px;
+    }
+  }
+}
+/* end contact data */
+
+/* footer */
+#footer {
+  background-color: $light-grey;
+  padding-top: 30px;
+
+  .socials {
+    width: 235px;
+    margin: 20px auto;
+
+    .brand {
+      margin-bottom: 15px;
+    }
+  }
+
+  .haft {
+    width: 50%;
+    float: left;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+/* end footer */
 
 /* mobile */
 @import "mobile";

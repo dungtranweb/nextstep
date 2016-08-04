@@ -43,18 +43,63 @@ table {
 /* general */
 body {
   font-family: 'Poppins', Tahoma, Arial, sans-serif;
-  position: relative; }
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto; }
 
 h1 {
   font-size: 45px;
   font-weight: 600; }
 
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 0; }
+
 p {
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 20px;
+  font-weight: 300; }
+
+input, textarea {
+  height: 60px;
+  font-weight: 300;
+  outline: none;
+  border: none;
+  background-color: #ECF0F1;
+  vertical-align: middle;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+textarea {
+  height: auto;
+  resize: none;
+  min-width: 100%; }
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none; }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400; }
+  a:hover {
+    color: #0ABEDF;
+    text-decoration: none; }
 
 .ion {
   color: #0ABEDF; }
+
+.title {
+  padding: 50px 0;
+  text-align: center; }
 
 /* end general */
 /* nav */
@@ -155,11 +200,9 @@ p {
 #apps {
   background-color: #ECF0F1;
   text-align: center; }
-  #apps .title {
-    padding: 70px 0; }
-    #apps .title p {
-      font-size: 16px;
-      line-height: 20px; }
+  #apps p {
+    font-size: 16px;
+    line-height: 20px; }
   #apps .screen-slider .screen {
     margin: 0 auto; }
   #apps .screen-slider .apps-left div {
@@ -173,21 +216,86 @@ p {
 
 /* end apps slider */
 /* why */
-#why h1 {
-  text-align: center;
-  padding: 70px 0; }
 #why .why-info {
   background: white url(../images/why.png) right top no-repeat;
   padding-bottom: 50px; }
   #why .why-info h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #0ABEDF;
-    padding: 20px 0; }
+    color: #0ABEDF; }
   #why .why-info .reason {
-    margin: 30px 0 30px 50px; }
+    margin: 30px 0 30px 50px;
+    font-weight: 300; }
 
 /* end why */
+/* subscribe */
+#subscribe {
+  background: #ECF0F1 url(../images/subscribe-bg.png) center center no-repeat;
+  padding: 45px 0;
+  overflow: hidden; }
+  #subscribe h3 {
+    color: white; }
+  #subscribe .form-sub {
+    position: relative; }
+  #subscribe input, #subscribe textarea {
+    font-size: 24px;
+    background-color: white; }
+  #subscribe button {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 40px; }
+
+/* end subscribe */
+/* about */
+#about .nex-info p {
+  padding-bottom: 20px; }
+  #about .nex-info p:last-child {
+    font-weight: 600; }
+  #about .nex-info p:first-child {
+    padding-top: 30px; }
+
+/* end about */
+/* clients */
+#clients {
+  background-color: #ECF0F1; }
+
+/* end clients */
+/* contact */
+#contact .contact-submit {
+  text-align: center; }
+  #contact .contact-submit button {
+    margin-top: 15px; }
+
+/* end contact */
+/* contact data */
+#contact-data {
+  margin: 50px 0; }
+  #contact-data .ion {
+    font-size: 70px;
+    vertical-align: middle; }
+  #contact-data .contact-info {
+    display: flex;
+    align-items: center; }
+    #contact-data .contact-info div:last-child {
+      padding-left: 15px; }
+
+/* end contact data */
+/* footer */
+#footer {
+  background-color: #ECF0F1;
+  padding-top: 30px; }
+  #footer .socials {
+    width: 235px;
+    margin: 20px auto; }
+    #footer .socials .brand {
+      margin-bottom: 15px; }
+  #footer .haft {
+    width: 50%;
+    float: left; }
+  #footer .copyright {
+    text-align: center;
+    padding: 10px 0; }
+
+/* end footer */
 /* mobile */
 @media screen and (max-width: 768px) {
   .navbar-default {
