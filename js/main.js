@@ -45,19 +45,29 @@ $(document).ready(function() {
   // Header
   $('.header-slider').flexslider({
     animation: "slide",
-    animationSpeed: 300,
-    controlNav: false
+    animationSpeed: 1000,
+    directionNav: true,
+    controlsContainer: $(".custom-controls-container")
+  });
+
+  // Mockups
+  $('.mockups').flexslider({
+    animation: "fade",
+    animationSpeed: 1000,
+    controlNav: false,
+    directionNav: false
   });
 
   // Apps link
   var link = $('.owl-carousel');
 
   link.owlCarousel({
-    items:6,
-    loop:true,
-    autoWidth: true,
-    margin:30,
-    autoplay:true,
-    autoplayTimeout: 1000
+    items: 5,
+    loop: true,
+    center: true,
+    autoWidth: false,
+    margin: 30,
+    autoplay: true,
+    autoplayTimeout: 7000
   });
 });

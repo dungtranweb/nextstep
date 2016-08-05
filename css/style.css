@@ -43,7 +43,6 @@ table {
 /* general */
 body {
   font-family: 'Poppins', Tahoma, Arial, sans-serif;
-  position: relative;
   max-width: 1920px;
   margin: 0 auto; }
 
@@ -58,7 +57,7 @@ h3 {
 
 p {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 22px;
   font-weight: 300; }
 
 input, textarea {
@@ -98,7 +97,7 @@ a {
   color: #0ABEDF; }
 
 .title {
-  padding: 50px 0;
+  padding: 60px 0;
   text-align: center; }
 
 /* end general */
@@ -147,85 +146,107 @@ a {
 
 /* end nav */
 /* header */
-.slide-dtaxi, .slide-nexex {
+#home {
+  position: relative; }
+  #home p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px; }
+  #home .custom-controls-container .flex-control-nav {
+    bottom: 10px; }
+  #home .custom-controls-container .flex-control-paging li a.flex-active {
+    background-color: #0ABEDF; }
+  #home .custom-controls-container .flex-control-paging li a {
+    background-color: #ECF0F1;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none; }
+
+.slide-dtaxi, .slide-nexex, .slide-gvn {
   background: #ECF0F1 url(../images/header/dtaxi/dtaxi-bg.jpg) bottom center no-repeat;
   padding-top: 170px !important;
   padding-bottom: 50px !important; }
-  .slide-dtaxi .app-screen img, .slide-nexex .app-screen img {
+  .slide-dtaxi .app-screen img, .slide-nexex .app-screen img, .slide-gvn .app-screen img {
     margin: 0 auto; }
-  .slide-dtaxi .app-info, .slide-nexex .app-info {
-    color: #2C3E50;
-    margin-top: 30px; }
-    .slide-dtaxi .app-info .title, .slide-nexex .app-info .title {
-      font-size: 40px; }
-      .slide-dtaxi .app-info .title *, .slide-nexex .app-info .title * {
+  .slide-dtaxi .app-info, .slide-nexex .app-info, .slide-gvn .app-info {
+    color: #2C3E50; }
+    .slide-dtaxi .app-info .title, .slide-nexex .app-info .title, .slide-gvn .app-info .title {
+      font-size: 40px;
+      padding-top: 25px; }
+      .slide-dtaxi .app-info .title *, .slide-nexex .app-info .title *, .slide-gvn .app-info .title * {
         float: left; }
-      .slide-dtaxi .app-info .title img, .slide-nexex .app-info .title img {
+      .slide-dtaxi .app-info .title img, .slide-nexex .app-info .title img, .slide-gvn .app-info .title img {
         margin: 0;
         vertical-align: middle; }
-      .slide-dtaxi .app-info .title h1, .slide-nexex .app-info .title h1 {
+      .slide-dtaxi .app-info .title h1, .slide-nexex .app-info .title h1, .slide-gvn .app-info .title h1 {
         padding-left: 20px;
         padding-bottom: 10px;
         padding-top: 20px; }
-      .slide-dtaxi .app-info .title h2, .slide-nexex .app-info .title h2 {
+      .slide-dtaxi .app-info .title h2, .slide-nexex .app-info .title h2, .slide-gvn .app-info .title h2 {
         padding-left: 20px;
         font-weight: 400; }
-    .slide-dtaxi .app-info .feature, .slide-nexex .app-info .feature {
+    .slide-dtaxi .app-info .feature, .slide-nexex .app-info .feature, .slide-gvn .app-info .feature {
       padding-top: 50px;
       clear: both;
       font-size: 24px;
       line-height: 32px; }
-      .slide-dtaxi .app-info .feature .fea-list, .slide-nexex .app-info .feature .fea-list {
+      .slide-dtaxi .app-info .feature .fea-list, .slide-nexex .app-info .feature .fea-list, .slide-gvn .app-info .feature .fea-list {
         font-weight: 500;
         padding: 20px 0; }
-        .slide-dtaxi .app-info .feature .fea-list li, .slide-nexex .app-info .feature .fea-list li {
+        .slide-dtaxi .app-info .feature .fea-list li, .slide-nexex .app-info .feature .fea-list li, .slide-gvn .app-info .feature .fea-list li {
           float: left;
           width: 33%; }
-    .slide-dtaxi .app-info .download, .slide-nexex .app-info .download {
+    .slide-dtaxi .app-info .download, .slide-nexex .app-info .download, .slide-gvn .app-info .download {
       margin-top: 50px; }
-      .slide-dtaxi .app-info .download .ios, .slide-nexex .app-info .download .ios, .slide-dtaxi .app-info .download .android, .slide-nexex .app-info .download .android {
+      .slide-dtaxi .app-info .download .ios, .slide-nexex .app-info .download .ios, .slide-gvn .app-info .download .ios, .slide-dtaxi .app-info .download .android, .slide-nexex .app-info .download .android, .slide-gvn .app-info .download .android {
         width: 50%;
         display: inline-block;
         float: left; }
-        .slide-dtaxi .app-info .download .ios img, .slide-nexex .app-info .download .ios img, .slide-dtaxi .app-info .download .android img, .slide-nexex .app-info .download .android img {
+        .slide-dtaxi .app-info .download .ios img, .slide-nexex .app-info .download .ios img, .slide-gvn .app-info .download .ios img, .slide-dtaxi .app-info .download .android img, .slide-nexex .app-info .download .android img, .slide-gvn .app-info .download .android img {
           margin-bottom: 20px; }
-      .slide-dtaxi .app-info .download .android img, .slide-nexex .app-info .download .android img {
+      .slide-dtaxi .app-info .download .android img, .slide-nexex .app-info .download .android img, .slide-gvn .app-info .download .android img {
         float: right; }
 
 .slide-nexex {
   background: #ECF0F1 url(../images/header/nexex/nexex-bg.jpg) bottom center no-repeat; }
 
+.slide-gvn {
+  background: #ECF0F1 url(../images/header/gvn/gvn-bg.png) bottom center no-repeat; }
+  .slide-gvn h1 {
+    font-size: 43px; }
+
 /* header */
-/* apps slider */
+/* why */
+#why h3 {
+  color: #0ABEDF; }
+#why .reason {
+  margin: 30px 0 30px 50px;
+  font-weight: 300; }
+#why .why-img {
+  top: -100px; }
+
+/* end why */
+/* apps mockup */
 #apps {
   background-color: #ECF0F1;
   text-align: center; }
   #apps p {
     font-size: 16px;
     line-height: 20px; }
-  #apps .screen-slider .screen {
-    margin: 0 auto; }
-  #apps .screen-slider .apps-left div {
-    width: 100%;
-    margin: 48px 0;
-    text-align: right; }
-    #apps .screen-slider .apps-left div img {
-      display: inline; }
-  #apps .screen-slider .apps-right img {
-    margin: 48px 0; }
+  #apps .screens {
+    margin-bottom: 30px; }
 
-/* end apps slider */
-/* why */
-#why .why-info {
-  background: white url(../images/why.png) right top no-repeat;
-  padding-bottom: 50px; }
-  #why .why-info h3 {
-    color: #0ABEDF; }
-  #why .why-info .reason {
-    margin: 30px 0 30px 50px;
-    font-weight: 300; }
+/* end apps mockup */
+/* apps link */
+#link {
+  padding: 100px 0; }
+  #link p {
+    font-weight: 500;
+    text-align: center;
+    padding-top: 30px; }
 
-/* end why */
+/* end apps link */
 /* subscribe */
 #subscribe {
   background: #ECF0F1 url(../images/subscribe-bg.png) center center no-repeat;
@@ -245,13 +266,18 @@ a {
     font-size: 40px; }
 
 /* end subscribe */
-/* about */
-#about .nex-info p {
+/* clients */
+#clients {
   padding-bottom: 20px; }
-  #about .nex-info p:last-child {
-    font-weight: 600; }
-  #about .nex-info p:first-child {
-    padding-top: 30px; }
+
+/* clients */
+/* about */
+#about {
+  padding-bottom: 20px; }
+  #about .nex-info p {
+    padding-bottom: 20px; }
+    #about .nex-info p:last-child {
+      font-weight: 600; }
 
 /* end about */
 /* clients */
