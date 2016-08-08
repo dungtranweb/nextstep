@@ -33,7 +33,7 @@ $(window).scroll(navSlide);
 $(document).ready(function() {
   var browser_width = $(window).width();
 
-  if(browser_width < 768) {
+  if(browser_width < 769) {
     $('.navbar').removeClass('affix');
     $('.navbar').addClass('navbar-fixed-top');
     $('.navbar').autoHidingNavbar();
@@ -46,7 +46,7 @@ $(document).ready(function() {
   $('.header-slider').flexslider({
     animation: "slide",
     animationSpeed: 1000,
-    directionNav: true,
+    directionNav: false,
     controlsContainer: $(".custom-controls-container")
   });
 
@@ -68,6 +68,15 @@ $(document).ready(function() {
     autoWidth: false,
     margin: 30,
     autoplay: true,
-    autoplayTimeout: 7000
+    autoplayTimeout: 7000,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 3
+      },
+      992: {
+        items: 5
+      }
+    }
   });
 });
