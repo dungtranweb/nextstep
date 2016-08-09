@@ -47,7 +47,6 @@ textarea {
   @extend input;
   height: auto;
   resize: none;
-  min-width: 100%;
 }
 
 button {
@@ -356,6 +355,7 @@ a {
 
 /* contact */
 #contact {
+
   .contact-submit {
     text-align: center;
 

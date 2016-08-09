@@ -77,8 +77,7 @@ input, textarea {
 
 textarea {
   height: auto;
-  resize: none;
-  min-width: 100%; }
+  resize: none; }
 
 button {
   background-color: transparent;
@@ -471,6 +470,23 @@ a {
 
   .slide-dtaxi .app-info .feature .fea-list, .slide-nexex .app-info .feature .fea-list, .slide-gvn .app-info .feature .fea-list, .slide-nexex .app-info .feature .fea-list, .slide-gvn .app-info .feature .fea-list {
     font-size: 14px; }
+
+  .slide-dtaxi .app-info .download .ios, .slide-nexex .app-info .download .ios, .slide-gvn .app-info .download .ios, .slide-dtaxi .app-info .download .android, .slide-nexex .app-info .download .android, .slide-gvn .app-info .download .android, .slide-nexex .app-info .download .ios, .slide-nexex .app-info .download .android, .slide-gvn .app-info .download .ios, .slide-gvn .app-info .download .android,
+  .slide-dtaxi .app-info .download .android,
+  .slide-nexex .app-info .download .android,
+  .slide-gvn .app-info .download .android, .slide-nexex .app-info .download .android, .slide-gvn .app-info .download .android {
+    padding-right: 0;
+    width: 100%; }
+
+  .slide-dtaxi .app-info .download .android img, .slide-nexex .app-info .download .android img, .slide-gvn .app-info .download .android img, .slide-nexex .app-info .download .android img, .slide-gvn .app-info .download .android img,
+  .slide-dtaxi .app-info .download .ios img,
+  .slide-nexex .app-info .download .ios img,
+  .slide-gvn .app-info .download .ios img,
+  .slide-dtaxi .app-info .download .android img,
+  .slide-nexex .app-info .download .android img,
+  .slide-gvn .app-info .download .android img, .slide-nexex .app-info .download .iso img, .slide-gvn .app-info .download .iso img {
+    float: none;
+    margin: 10px auto; }
 
   #why .reason {
     margin-left: 10px; }

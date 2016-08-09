@@ -14,9 +14,6 @@ $(function() {
   });
 });
 
-// Start wow.js
-new WOW().init();
-
 // Set position when change navbar's height and background-color
 var nav_height = $('.navbar').height() - 1;
 
@@ -32,16 +29,16 @@ function navSlide() {
 
 $(window).scroll(navSlide);
 
-// Set browser width to apply auto_hide_navbar
-$(document).ready(function() {
-  var browser_width = $(window).width();
+// Set browser width to apply auto_hide_navbar & WOW.js
+var browser_width = $(window).width();
 
-  if(browser_width < 769) {
-    $('.navbar').removeClass('affix');
-    $('.navbar').addClass('navbar-fixed-top');
-    $('.navbar').autoHidingNavbar();
-  }
-})
+if(browser_width < 769) {
+  $('.navbar').removeClass('affix');
+  $('.navbar').addClass('navbar-fixed-top');
+  $('.navbar').autoHidingNavbar();
+} else {
+  new WOW().init();
+}
 
 // Slider
 $(document).ready(function() {

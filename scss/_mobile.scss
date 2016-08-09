@@ -217,6 +217,18 @@
     font-size: 14px;
   }
 
+  .slide-dtaxi .app-info .download .ios, .slide-nexex .app-info .download .ios, .slide-gvn .app-info .download .ios,
+  .slide-dtaxi .app-info .download .android, .slide-nexex .app-info .download .android, .slide-gvn .app-info .download .android {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .slide-dtaxi .app-info .download .android img, .slide-nexex .app-info .download .android img, .slide-gvn .app-info .download .android img,
+  .slide-dtaxi .app-info .download .ios img, .slide-nexex .app-info .download .iso img, .slide-gvn .app-info .download .iso img {
+    float: none;
+    margin: 10px auto;
+  }
+
   // why
   // =================================
   #why .reason {
