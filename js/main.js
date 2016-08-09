@@ -14,6 +14,9 @@ $(function() {
   });
 });
 
+// Start wow.js
+new WOW().init();
+
 // Set position when change navbar's height and background-color
 var nav_height = $('.navbar').height() - 1;
 
