@@ -1,0 +1,259 @@
+// =============================================================================
+@media screen and (max-width: 1200px) {
+  // header
+  // =================================
+  #home p {
+    font-size: 20px;
+  }
+
+  .slide-dtaxi .app-info .title, .slide-nexex .app-info .title, .slide-gvn .app-info .title {
+    padding-top: 0;
+    font-size: 30px;
+  }
+
+  .slide-dtaxi .app-info .title h1, .slide-nexex .app-info .title h1, .slide-gvn .app-info .title h1 {
+    font-size: 36px;
+  }
+
+  .slide-dtaxi .app-info .feature, .slide-nexex .app-info .feature, .slide-gvn .app-info .feature {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  .slide-dtaxi .app-info .download .ios, .slide-nexex .app-info .download .ios, .slide-gvn .app-info .download .ios,
+  .slide-dtaxi .app-info .download .android, .slide-nexex .app-info .download .android, .slide-gvn .app-info .download .android {
+    padding-right: 10%;
+  }
+
+  // why
+  // =================================
+  .why-img {
+    display: none;
+  }
+}
+
+// =============================================================================
+@media screen and (max-width: 992px) {
+  // header
+  // =================================
+  #home {
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .slide-dtaxi, .slide-nexex, .slide-gvn {
+    padding-top: 140px !important;
+  }
+
+  .slide-dtaxi .app-info .title, .slide-nexex .app-info .title, .slide-gvn .app-info .title {
+    padding-top: 0;
+    font-size: 24px;
+  }
+
+  .slide-dtaxi .app-info .title h1, .slide-nexex .app-info .title h1, .slide-gvn .app-info .title h1 {
+    font-size: 30px;
+  }
+
+  .slide-dtaxi .app-info .feature, .slide-nexex .app-info .feature, .slide-gvn .app-info .feature {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+
+  .slide-dtaxi .app-info .feature .fea-list, .slide-nexex .app-info .feature .fea-list, .slide-gvn .app-info .feature .fea-list {
+    padding: 10px 0;
+  }
+
+  .slide-dtaxi .app-info .download, .slide-nexex .app-info .download, .slide-gvn .app-info .download {
+    margin-top: 35px;
+  }
+
+  .slide-dtaxi .app-info .download .ios img, .slide-nexex .app-info .download .ios img, .slide-gvn .app-info .download .ios img,
+  .slide-dtaxi .app-info .download .android img, .slide-nexex .app-info .download .android img, .slide-gvn .app-info .download .android img {
+    margin-bottom: 10px;
+  }
+
+  // contact-data
+  // =================================
+  #contact-data p {
+    font-size: 13px;
+  }
+
+  // footer
+  // =================================
+  #footer {
+    text-align: center;
+
+    h3 {
+      padding: 15px 0 5px;
+    }
+
+    .haft {
+      width: 100%;
+    }
+  }
+}
+
+// =============================================================================
+@media screen and (max-width: 768px) {
+  // navbar
+  // =================================
+  .navbar-default {
+    height: auto;
+    background-color: $light-grey;
+    border: none;
+  }
+
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:hover {
+    background-color: $light-grey;
+    border-bottom: none;
+    color: $light-blue;
+  }
+
+  .navbar-default .navbar-nav>.active>a:focus {
+    color: $light-blue;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    height: 50px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $dark-blue;
+    text-align: center;
+    background-color: $light-grey;
+  }
+
+  .navbar-default .navbar-nav>li>a:hover {
+    border-bottom: none;
+  }
+
+  .navbar-default .navbar-nav>li>a:hover {
+    color: $light-blue;
+  }
+
+  .navbar-brand>img {
+    display: none;
+  }
+
+  .navbar-default .navbar-toggle {
+    float: left;
+    margin-left: 15px;
+  }
+
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: $light-grey;
+  }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border: none;
+  }
+
+  // header
+  // =================================
+  .slide-dtaxi, .slide-nexex, .slide-gvn {
+    padding-top: 100px !important;
+  }
+  .slide-dtaxi .app-info .title, .slide-nexex .app-info .title, .slide-gvn .app-info .title {
+    padding-top: 20px;
+  }
+  .slide-dtaxi .app-info .title img, .slide-nexex .app-info .title img, .slide-gvn .app-info .title img {
+    width: 80px;
+  }
+  .slide-dtaxi .app-info .feature .fea-list, .slide-nexex .app-info .feature .fea-list, .slide-gvn .app-info .feature .fea-list {
+    font-size: 18px;
+  }
+
+  // contact-data
+  // =================================
+  #contact-data p {
+    font-size: 16px;
+  }
+
+
+}
+
+// =============================================================================
+@media screen and (max-width: 480px) {
+  // general
+  // =================================
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+  }
+
+  // header
+  // =================================
+  .slide-dtaxi .app-info .title, .slide-nexex .app-info .title, .slide-gvn .app-info .title {
+    font-size: 18px;
+  }
+
+  .slide-dtaxi .app-info .title h1, .slide-nexex .app-info .title h1, .slide-gvn .app-info .title h1 {
+    font-size: 24px;
+  }
+
+  .slide-dtaxi .app-info .feature, .slide-nexex .app-info .feature, .slide-gvn .app-info .feature {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
+  .slide-dtaxi .app-info .feature .fea-list, .slide-nexex .app-info .feature .fea-list, .slide-gvn .app-info .feature .fea-list {
+    font-size: 14px;
+  }
+
+  .slide-dtaxi .app-info .download .ios, .slide-nexex .app-info .download .ios, .slide-gvn .app-info .download .ios,
+  .slide-dtaxi .app-info .download .android, .slide-nexex .app-info .download .android, .slide-gvn .app-info .download .android {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .slide-dtaxi .app-info .download .android img, .slide-nexex .app-info .download .android img, .slide-gvn .app-info .download .android img,
+  .slide-dtaxi .app-info .download .ios img, .slide-nexex .app-info .download .iso img, .slide-gvn .app-info .download .iso img {
+    float: none;
+    margin: 10px auto;
+  }
+
+  // why
+  // =================================
+  #why .reason {
+    margin-left: 10px;
+  }
+
+  // contact-data
+  // =================================
+  #contact-data p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 769px) {
+  .slide-dtaxi .app-info .feature .fea-list, .slide-nexex .app-info .feature .fea-list,
+  .slide-gvn .app-info .feature .fea-list, .slide-nexex .app-info .feature .fea-list, .slide-gvn .app-info .feature .fea-list {
+    font-size: 17px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    height: 60px;
+  }
+
+  .navbar-brand>img {
+    display: inline;
+    max-height: 35px;
+  }
+}
